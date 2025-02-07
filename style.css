@@ -1,82 +1,238 @@
-html{
-    background-color: #09090B;
+/* Estilos generales */
+:root {
+  --color-bg: #09090b;
+  --color-primary: #ffffff;
+  --color-secondary: #f7f6f6;
+  --color-highlight: rgba(255, 255, 255, 0.2);
+  --color-card: #18181b;
+  --color-accent: #4c1d95;
+  --color-footer: #000;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navegación */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: var(--color-highlight);
+}
+
+/* Tipografía */
+h1, h2, h3 {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2, h3 {
+  color: var(--color-secondary);
+}
+
+/* Secciones */
+section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tarjetas de proyectos y experiencia */
+.ModuloProyecto, .ModuloExp {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-accent);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ModuloProyecto:hover, .ModuloExp:hover {
+  transform: scale(1.05);
+}
+
+/* Sección sobre mí */
+.RecuadroMi {
+  background-color: var(--color-accent);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Footer */
+#Contacto {
+  background-color: var(--color-footer);
+  padding: 20px;
+  text-align: center;
+}
+
+#Contacto table {
+  color: var(--color-primary);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+#Contacto p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Imágenes */
+.ImgMi img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+/* Iconos*/
+.social-links {
+  list-style: none;
+  margin-top: 0.5em;
+  display: flex;
+  gap: 30px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🎨 Colores personalizados para cada icono */
+.linkedin {
+   /* Azul de LinkedIn */
+  color: #ffffff; /* Blanco para GitHub */
+  background-color: #0077b5; /* Fondo negro */
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.youtube {
+  color: #ffffff; /* Rojo de YouTube */
+  background-color: #FF0000; /* Fondo negro */
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.github {
+  color: #ffffff; /* Blanco para GitHub */
+  background-color: #000; /* Fondo negro */
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.x-twitter {
+  color: #ffffff; /* Blanco para X */
+  background-color: #000; /* Fondo negro */
+  padding: 5.2px;
+  border-radius: 10%;
+}
+
+/* 🎭 Efecto hover: inversión de colores para GitHub y X */
+.github:hover, .x-twitter:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* 🔥 Efecto hover normal para LinkedIn y YouTube */
+.linkedin:hover {
+  color: #005582; /* Un azul más oscuro */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.youtube:hover {
+  color: #cc0000; /* Un rojo más oscuro */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  /* .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  } */
+  .headMenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.listMenu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
     padding: 10px;
 }
-header{
-    background-color: gray;
-    margin: 0px;
-    
+
+.listMenu a i {
+    font-size: 24px; /* Tamaño más grande para los íconos */
+    color: white;
 }
-header ul{
+
+.listMenu a span {
+    display: none; /* Oculta el texto */
+}
+
+  .InfoBase {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+  }
+
+  .InfoText, .ImgMi {
+    width: 100%;
     text-align: center;
-}
-nav{
-    position: fixed;
-    background-color: aquamarine;
-    width: 80%;
-    border: 2px #4c1d95 solid;
-    margin: 0 auto;
-    text-align: center;
-}
-ul{
-    list-style: none;
-    display: flex;
-}
-ul li{
-    margin-right: 20px;
-}
-h1{
-    color: #ffffff;
-    font-family: 'Montserrat';
-}
-h2{
-    color: #f7f6f6;
-}
-h3{
-    color: #EBEBEB;
-}
-.ModuloProyecto{
-    background-color: #18181b;
-    border: 1px white solid;
-    border-radius: 25px;
-    padding: 15px;
-}
-.ModuloExp{
-    background-color: #18181b;
-    border: 1px white solid;
-    border-radius: 25px;
-    padding: 15px;
-}
-.RecuadroMi{
-    background-color: #4c1d95;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 36px;
-    display: flex;
-}
-#Contacto{
-    background-color: #000;
-    margin: 0px;
-}
-table{
-    color: #ffffff;
-    width: 90%;
-}
-p{
-    color: #f7f6f6;
-    font-family: 'Inter';
-}
-.InfoBase{
-    display: flex;
-/*     margin-top: 50px;
- */    padding-top: 55px;
-}
-.InfoText{
-    width: 60%;
-}
-.ImgMi{
-    width: 40px;
-    height: 50px;
-    object-fit: cover;
-    
+  }
 }

@@ -3,103 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
     <title>Sr López PortFolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="navegador">
+    <nav id="navegador" class="navbar">
         <header class="header">
             <ul class="headMenu">
-              <li class="listMenu"><a href="#Inicio" class="textMenu">Inicio</a></li>
-              <li class="listMenu"><a href="#Proyectos" class="textMenu">Proyectos</a></li>
-              <li class="listMenu"><a href="#Experiencia" class="textMenu">Experiencia</a></li>
-              <li class="listMenu"><a href="#Contacto" class="textMenu">Contacto</a></li>
+                <li class="listMenu"><a href="#Inicio"><i class="fas fa-home"></i> <span>Inicio</span></a></li>
+                <li class="listMenu"><a href="#Proyectos"><i class="fas fa-code"></i> <span>Proyectos</span></a></li>
+                <li class="listMenu"><a href="#Experiencia"><i class="fas fa-briefcase"></i> <span>Experiencia</span></a></li>
+                <li class="listMenu"><a href="#Contacto"><i class="fas fa-envelope"></i> <span>Contacto</span></a></li>
             </ul>
-          </header>
+        </header>
     </nav>
-    <section id="Inicio">
-        <div>
-            <div class="InfoBase">
-                <div class="InfoText">
-                    <p>DISPONIBLE PARA TRABAJOS DE MEDIO TIEMPO</p>
-                    <h1>Sergio Alejandro López Ávila</h1>
-                    <p>Actualmente soy estudiante de Ingeniería Electrónica con un gusto inmenso
-                    por el desarrollo de Software. Por ahora me encuentro en mi etapa de 
-                    aprendizaje, no obstante se puede decir que me gusta el Front-end, el 
-                    desarrollo de apps móviles y el uso de placas de desarrollo como lo es 
-                    Arduino, ESP32 y Raspberry.</p>
-                    <a href="#AboutMe">¿Quieres conocerme aun más?</a>
-                    <ul>
-                        <li><a href="linkedin">logo linkedin</a></li>
-                        <li><a>logo GitHub</a></li>
-                        <li><a>logo YouTube</a></li>
-                        <li><a>logo Twitter / X</a></li>
-                    </ul>
-                    <button>CV</button>
-                    <p>sergio.contacto@gmail.com <button>correo</button></p>
-                </div>
-                <div class="ImgMi">
-                    <img src="yo"/>
-                </div>
+    <main>
+      <section id="Inicio">
+        <div class="InfoBase">
+          <div class="InfoText">
+            <h1>Sergio Alejandro López Ávila</h1>
+            <p>Actualmente soy estudiante de Ingeniería Electrónica con un gusto inmenso
+                por el desarrollo de Software. Por ahora me encuentro en mi etapa de 
+                aprendizaje, no obstante se puede decir que me gusta el Front-end, el 
+                desarrollo de apps móviles y el uso de placas de desarrollo como lo es 
+                Arduino, ESP32 y Raspberry.</p>
+            <a href="#AboutMe" class="btn">¿Quieres conocerme aún más?</a>
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/tuusuario" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/c/tuusuario" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/tuusuario" target="_blank" class="x-twitter"><i class="fab fa-x-twitter"></i></a></li>
+
+                </ul>
             </div>
-            <div class="Lengs_Tols">
-                <h2>Lenguajes & Herramientas</h2>
-                <p>colocar las imagendes de los lenguajes y herramientas</p>
-            </div>
+            <button class="btn">Descargar CV</button>
+            <p>sergio.contacto@gmail.com <button class="btn">Enviar correo</button></p>
+          </div>
+          <div class="ImgMi">
+            <img src="imgREFF/yo.jpeg" alt="Foto de Sergio" />
+          </div>
         </div>
-        <!-- <img src="imgREFF/inicio.png"/> -->
-    </section>
-    <section id="Proyectos">
-        <div>
-            <h2>Proyectos</h2>
-        </div>
+      </section>
+    
+      <section id="Proyectos">
+        <h2>Proyectos</h2>
         <div class="MallaProyectos">
-            <div class="ModuloProyecto">
-                <img src="poryecto"/>
-                <div class="infoProyecto">
-                    <h3>Titulo Proyecto</h3>
-                    <p>Descripción del proyecto</p>
-                    <div class="toolMalla">
-                        <div class="tool">
-                            <p>agregar svg y/o nombre de la herramienta o lenguaje</p>
-                        </div>
-                    </div>
-                    <a href="githubProyecto">Conoce más del proyecto -></a>
-                </div>
+          <div class="ModuloProyecto">
+            <img src="proyecto" alt="Imagen del proyecto" />
+            <div class="infoProyecto">
+              <h3>Título Proyecto</h3>
+              <p>Descripción del proyecto</p>
+              <a href="#githubProyecto" class="btn">Conoce más del proyecto →</a>
             </div>
+          </div>
         </div>
-        <!-- <img src="imgREFF/proyectos.png"/> -->
-    </section>
-    <section id="Experiencia">
-        <article>
-            <div>
-                <h2>Experiencia</h2>
+      </section>
+    
+      <section id="Experiencia">
+        <h2>Experiencia</h2>
+        <div class="MallaExp">
+          <div class="ModuloExp">
+            <img src="svg" alt="Ícono de experiencia" />
+            <div class="infoExpLab">
+              <h3>Asistente Virtual</h3>
+              <p>Manejo de plataformas digitales del Estado...</p>
             </div>
-            <div class="MallaExp">
-                <p>Experiencia Laboral</p>
-                <div class="ModuloExp">
-                    <img src="svg"/>
-                    <div class="infoExpLab">
-                        <h3>Asistente Virtual</h3>
-                        <p>Manejo de plataformas digitales del Estado. <br>Digitalización de formularios a bases de datos.</p>
-                        <p>Octubre 2024 - Actual</p>
-                    </div>
-                </div>
-                <p>Experiencia Académica</p>
-                <div class="ModuloExp">
-                    <img src="svg"/>
-                    <div class="infoExpAcd">
-                        <h3>Pregrado</h3>
-                        <p>Estudiante de la Universidad Distrital Fransisco José de Caldas. <br>Facultad de Ingeniería.</p>
-                        <p>Ing. Electrónica<br>2023 - Actual</p>
-                    </div>
-                </div>
-            </div>
-            <p class="Agradecimiento">Agradecimiento especial a mi familia por brindarme todo su apoyo incondicional para mi crecimiento profesional</p>
-        </article>
-        <!--<img src="imgREFF/exp.png"/>-->
-    </section>
-    <section id="AboutMe">
+          </div>
+        </div>
+      </section>
+
+      <section id="AboutMe">
         <article>
             <div class="RecuadroMi">
                 <div>
@@ -113,52 +89,50 @@
                        pero no me niego a realizar asados o comidas más saludables.
                     </p>
                 </div>
-                <div>
-                    <img src="fotosVarias"/>
+                <div class="ImgMi">
+                    <img src="imgREFF/yo.jpeg"/>
                 </div>
             </div>
         </article>
-        <!--<img src="imgREFF/mi.png"/>-->
     </section>
+    </main>
+    
     <footer id="Contacto">
-        <div>
-            <button>up</button>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Portafolio</th>
-                            <th>Datos de interes</th>
-                            <th>Redes sociales</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th><a href="#Inicio" class="textMenu">Inicio</a></th>
-                            <th>Reconocimientos y Certificaciones</th>
-                            <th>linkedin + logo</th>
-                        </tr>
-                        <tr>
-                            <th><a href="#Proyectos" class="textMenu">Proyectos</a></th>
-                            <th>Participación en eventos</th>
-                            <th>GitHub + logo</th>
-                        </tr>
-                        <tr>
-                            <th><a href="#Experiencia" class="textMenu">Experiencia</a></th>
-                            <th>Mi CV</th>
-                            <th>Twitter + logo</th>
-                        </tr>
-                        <tr>
-                            <th><a href="#AboutMe" class="textMenu">Más sobre mi</a></th>
-                            <th>sergio.contacto@gmail.com</th>
-                            <th>YouTube + logo</th>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>© 2024 Sergio Alejandro López Ávila. Todos los derechos reservados.</p>
-            </div>
-        </div>
-        <!--<img src="imgREFF/contac.png"/>-->
+      <button class="btn-up">↑</button>
+      <div class="footer-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Portafolio</th>
+                    <th>Datos de interes</th>
+                    <th>Redes sociales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="#Inicio" class="textMenu">Inicio</a></th>
+                    <th>Reconocimientos y Certificaciones</th>
+                    <th><a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></th>
+                </tr>
+                <tr>
+                    <th><a href="#Proyectos" class="textMenu">Proyectos</a></th>
+                    <th>Participación en eventos</th>
+                    <th><a href="https://github.com/tuusuario" target="_blank" class="github"><i class="fab fa-github"></i></a></th>
+                </tr>
+                <tr>
+                    <th><a href="#Experiencia" class="textMenu">Experiencia</a></th>
+                    <th>Mi CV</th>
+                    <th><a href="https://www.youtube.com/c/tuusuario" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></th>
+                </tr>
+                <tr>
+                    <th><a href="#AboutMe" class="textMenu">Más sobre mi</a></th>
+                    <th>sergio.contacto@gmail.com</th>
+                    <th><a href="https://twitter.com/tuusuario" target="_blank" class="x-twitter"><i class="fab fa-x-twitter"></i></a></th>
+                </tr>
+            </tbody>
+        </table>
+        <p>© 2024 Sergio Alejandro López Ávila. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
