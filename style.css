@@ -6,6 +6,8 @@
   --color-highlight: rgba(255, 255, 255, 0.2);
   --color-card: #18181b;
   --color-accent: #4c1d95;
+  --color-working: #251c94;
+  --color-academic: #1c3a94;
   --color-footer: #000;
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Inter', sans-serif;
@@ -79,14 +81,53 @@ section {
   margin: auto;
 }
 
+/* 🔹 Distribuye en dos columnas en pantallas grandes */
+.InfoBase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+/* 🔹 Ajusta el ancho de cada columna */
+.InfoText {
+  width: 50%;
+}
+
+.InfoImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Tarjetas de proyectos y experiencia */
-.ModuloProyecto, .ModuloExp {
+.ModuloProyecto {
   background-color: var(--color-card);
   border: 1px solid var(--color-accent);
   border-radius: 20px;
   padding: 20px;
   margin: 20px 0;
   transition: transform 0.3s ease-in-out;
+}
+
+.laboral{
+  background-color: var(--color-card);
+  border: 1px solid var(--color-working);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.academico{
+  background-color: var(--color-card);
+  border: 1px solid var(--color-academic);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+  text-align: end;
 }
 
 .ModuloProyecto:hover, .ModuloExp:hover {
@@ -118,6 +159,9 @@ section {
   max-width: 900px;
   margin: auto;
 }
+.bodytab th{
+  padding: 0.5em;
+}
 
 #Contacto p {
   margin-top: 20px;
@@ -126,7 +170,8 @@ section {
 
 /* Imágenes */
 .ImgMi img {
-  width: 100%;
+  width: 90%;
+  height: auto;
   max-width: 300px;
   border-radius: 15px;
 }
@@ -136,6 +181,7 @@ section {
   list-style: none;
   margin-top: 0.5em;
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -153,14 +199,14 @@ section {
 .linkedin {
    /* Azul de LinkedIn */
   color: #ffffff; /* Blanco para GitHub */
-  background-color: #0077b5; /* Fondo negro */
+  background-color: #000000; /* Fondo negro */
   padding: 5px;
   border-radius: 10%;
 }
 
 .youtube {
   color: #ffffff; /* Rojo de YouTube */
-  background-color: #FF0000; /* Fondo negro */
+  background-color: #000000; /* Fondo negro */
   padding: 5px;
   border-radius: 10%;
 }
@@ -198,10 +244,7 @@ section {
 
 /* Responsividad */
 @media (max-width: 768px) {
-  /* .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  } */
+  
   .headMenu {
     display: flex;
     justify-content: center;
@@ -227,12 +270,22 @@ section {
 
   .InfoBase {
     flex-direction: column;
-    align-items: center;
-    margin-top: 2.5em;
+    text-align: center;
+    margin-top: 0.5em;
   }
 
-  .InfoText, .ImgMi {
+  .InfoText, .InfoImg {
     width: 100%;
-    text-align: center;
-  }
+}
+
+.ImgMi {
+    width: 90%; /* Reduce el tamaño de la imagen */
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2em;
+}
 }
