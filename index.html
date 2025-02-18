@@ -29,7 +29,7 @@
                 aprendizaje, no obstante se puede decir que me gusta el Front-end, el 
                 desarrollo de apps móviles y el uso de placas de desarrollo como lo es 
                 Arduino, ESP32 y Raspberry.</p>
-            <a href="#AboutMe" class="btn">¿Quieres conocerme aún más?</a>
+            <a href="#AboutMe" class="btn_open_modal">¿Quieres conocerme aún más?</a>
             <div class="social-links">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
@@ -47,7 +47,6 @@
           </div>
         </div>
       </section>
-    
       <section id="Proyectos">
         <h2>Proyectos</h2>
         <div class="MallaProyectos">
@@ -69,10 +68,10 @@
           </div>
         </div>
       </section>
-    
       <section id="Experiencia">
         <h2>Experiencia</h2>
         <div class="MallaExp">
+          <div class="timeLine"></div>
           <div class="ModuloExp">
             <div class="laboral">
               <h3>Asistente Virtual</h3>
@@ -87,29 +86,26 @@
           </div>
         </div>
       </section>
-
-      <section id="AboutMe">
-        <article>
-            <div class="RecuadroMi">
-                <div class="InfoText">
-                    <h2>Más sobre mi</h2>
+            <div class="modal">
+              <div class="modal-content">
+                  <div class="InfoText">
+                    
+                    <h2><span class="close">&times;</span>    Más sobre mi </h2>
                     <p>Soy una persona que sabe como desenvolverse en un ámbito social, tengo la capacidad de adaptarme 
-                       a distinsas situaciones como lo puede ser la comprasión de las ideas y el trabajo en equipo.<br>
-                       Hago parte de la comunidad de IEEE en la Rama Estudiantil de mi Universidad, en la cual puedo trabajar y a la par
-                       divertirme con mis aficiones como en el desarrollo y la automatización, aunque no he podido participar en muchos 
-                       proyectos y eventos por motivos de estudi, se que vamos a lograr grandes cosas a futuro.<br>
-                       En mis tiempos libres me gusta cocinar y probar cosas nuevas, me gusta sobre todo el tema de panaderia y bizcocheria, 
-                       pero no me niego a realizar asados o comidas más saludables.
+                      a distinsas situaciones como lo puede ser la compración de las ideas y el trabajo en equipo.<br>
+                      Hago parte de la comunidad de IEEE en la Rama Estudiantil de mi Universidad, en la cual puedo trabajar y a la par
+                      divertirme con mis aficiones como en el desarrollo y la automatización, aunque no he podido participar en muchos 
+                      proyectos y eventos por motivos de estudi, se que vamos a lograr grandes cosas a futuro.<br>
+                      En mis tiempos libres me gusta cocinar y probar cosas nuevas, me gusta sobre todo el tema de panaderia y bizcocheria, 
+                      pero no me niego a realizar asados o comidas más saludables.
                     </p>
                 </div>
                 <div class="ImgMi">
                     <img src="imgREFF/yo.jpeg"/>
                 </div>
-            </div>
-        </article>
-    </section>
+              </div>
+          </div>
     </main>
-    
     <footer id="Contacto">
       <div class="footer-content">
         <table>
@@ -141,5 +137,6 @@
         <p>© 2024 Sergio Alejandro López Ávila. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

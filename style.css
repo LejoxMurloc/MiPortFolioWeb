@@ -87,7 +87,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 50px;
+  padding: 30px;
 }
 
 /* 🔹 Ajusta el ancho de cada columna */
@@ -132,18 +132,6 @@ section {
 
 .ModuloProyecto:hover, .ModuloExp:hover {
   transform: scale(1.05);
-}
-
-/* Sección sobre mí */
-.RecuadroMi {
-  background-color: var(--color-accent);
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
 }
 
 /* Footer */
@@ -240,6 +228,62 @@ section {
 .youtube:hover {
   color: #cc0000; /* Un rojo más oscuro */
   background-color: #ffffff; /* Fondo blanco */
+}
+
+/* 🔹 Estilos del enlace */
+.open-modal {
+  display: inline-block;
+  
+  text-decoration: none;
+
+  transition: 0.5s;
+}
+
+.open-modal:hover {
+  background-color: #1c7cd6;
+}
+
+/* 🔹 Pop-Up */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Contenido del pop-up */
+.modal-content {
+  background: #1e1e1e;
+  padding: 1em;
+  display: flex;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+.modal-content .ImgMi{
+  max-width: 100em;
+}
+
+/* 🔹 Botón de cierre */
+.close {
+  position:static; 
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* 🔹 Modo activo */
+.modal.show {
+  display: flex;
 }
 
 /* Responsividad */
