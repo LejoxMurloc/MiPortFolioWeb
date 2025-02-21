@@ -285,6 +285,41 @@ section {
 .modal.show {
   display: flex;
 }
+/* 🔹 Logos Tecnologias */
+.tecnologias{
+  list-style: none;
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 10em; /* Espaciado más razonable */
+  flex-wrap: wrap; /* Permite que los elementos se apilen si no caben */
+}
+.tecnologias li {
+  display: inline-block;
+  position: relative;
+  border: 1px solid var(--color-working);
+  border-radius: 10px;
+  padding: 10px; /* Da espacio alrededor del logo */
+}
+.tecnologias li:hover {
+  background-color: var(--color-secondary);
+}
+
+.htmlLog {
+  font-size: 40px;
+  color: #dd5b10; 
+}
+
+.cssLog {
+  font-size: 40px;
+  color: #1572B6; 
+}
+
+.jsLog {
+  font-size: 40px;
+  color: #F7DF1E; 
+}
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -331,5 +366,14 @@ section {
   justify-content: center;
   gap: 10px;
   margin: 2em;
+}
+.tecnologias {
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 2em; /* Reduce el espacio entre los elementos */
+}
+
+.tecnologias li {
+  width: fit-content; /* Ajusta el ancho al contenido */
+  margin: 0 auto; /* Centra los logos */
 }
 }
