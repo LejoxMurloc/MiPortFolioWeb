@@ -164,6 +164,30 @@ section {
   border-radius: 15px;
 }
 
+/* Botones de contacto */
+.btnInteres{
+  margin: 5px;
+  padding: 2px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  gap: 10em; 
+  flex-wrap: wrap; 
+}
+.btnCopy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  font-size: 20px; /* Ajusta el tamaño del texto en el botón */
+  background-color: #007BFF; /* Color de fondo */
+  color: white; /* Color del ícono */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Iconos*/
 .social-links {
   list-style: none;
@@ -233,14 +257,16 @@ section {
 /* 🔹 Estilos del enlace */
 .open-modal {
   display: inline-block;
-  
+  border-radius: 5px;
+  color:var(--color-secondary);
+  background-color: var(--color-accent);
   text-decoration: none;
-
   transition: 0.5s;
 }
 
 .open-modal:hover {
-  background-color: #1c7cd6;
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
 }
 
 /* 🔹 Pop-Up */
