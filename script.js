@@ -2,7 +2,7 @@ console.log("hola, esto es una prueba de que todo va bien :3");
 
 // Elementos
 const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".btn_open_modal");
+const openModal = document.querySelector(".open-modal");
 const closeModal = document.querySelector(".close");
 
 // Abrir pop-up
